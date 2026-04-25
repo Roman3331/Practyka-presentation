@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт про проходження практики | EduFlow DLS</title>
+    <meta name="description" content="Презентація результатів виробничої практики: розробка системи дистанційного навчання (СДН) на сучасному стеку.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">EduFlow <span>Project</span></div>
+            <ul>
+                <li><a href="#hero">Головна</a></li>
+                <li><a href="#about">Про проект</a></li>
+                <li><a href="#features">Функціонал</a></li>
+                <li><a href="#gallery">Галерея</a></li>
+                <li><a href="#tech">Стек</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="hero-content">
+                <h1 class="animate-up">Звіт про виробничу <br><span class="gradient-text">практику</span></h1>
+                <p class="animate-up delay-1">Створення системи дистанційного навчання на базі <strong>Next.js, Bun та Hono</strong>.</p>
+                <div class="hero-btns animate-up delay-2">
+                    <a href="#about" class="btn primary">Дізнатися більше</a>
+                    <a href="#gallery" class="btn secondary">Переглянути скріншоти</a>
+                </div>
+            </div>
+            <div class="hero-image-preview animate-fade">
+                <img src="images/home.png" alt="Головна сторінка системи" class="hero-img">
+                <div class="floating-card c1">Next.js</div>
+                <div class="floating-card c2">Bun</div>
+                <div class="floating-card c3">TypeScript</div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="reveal">Про проект</h2>
+                    <p class="reveal subtitle">EduFlow — це не просто сайт, а повноцінне середовище для управління навчальним процесом.</p>
+                </div>
+                
+                <div class="about-grid-detailed">
+                    <div class="about-card-v2 reveal">
+                        <div class="card-icon">🎯</div>
+                        <h3>Концепція</h3>
+                        <p>Головною ідеєю було створення максимально легкого та швидкого інтерфейсу, який не відволікає від навчання. Система побудована на принципах Single Page Application (SPA), що забезпечує миттєву навігацію без перезавантаження сторінок.</p>
+                    </div>
+                    <div class="about-card-v2 reveal">
+                        <div class="card-icon">⚙️</div>
+                        <h3>Архітектура</h3>
+                        <p>Використано сучасний підхід <strong>Client-Side Rendering</strong> з потужним API-сервером на Bun. Це дозволило реалізувати складну логіку: від автоматичного підрахунку середнього балу до динамічної генерації розкладу занять на сьогодні та завтра.</p>
+                    </div>
+                    <div class="about-card-v2 reveal">
+                        <div class="card-icon">🔒</div>
+                        <h3>Безпека та Валідація</h3>
+                        <p>Всі дані проходять сувору перевірку через <strong>Zod</strong> на рівні сервера та клієнта. Реалізовано рольову модель доступу, що розмежовує можливості студентів, викладачів та адміністраторів.</p>
+                    </div>
+                    <div class="about-card-v2 reveal">
+                        <div class="card-icon">📱</div>
+                        <h3>Адаптивність</h3>
+                        <p>Система повністю оптимізована для роботи на мобільних пристроях, планшетах та десктопах. Інтерфейс підлаштовується під будь-яку роздільну здатність, зберігаючи повний функціонал.</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+
+        <section id="features" class="section alt-bg">
+            <div class="container">
+                <h2 class="reveal text-center">Ключовий функціонал</h2>
+                <div class="features-grid">
+                    <div class="feature-item reveal">
+                        <div class="icon">🎓</div>
+                        <h4>Студентський кабінет</h4>
+                        <p>Динамічне привітання, підрахунок середнього балу та швидкий доступ до розкладу на наступний день.</p>
+                        <img src="images/studentHomePage.png" alt="Студент" class="feature-img-preview">
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="icon">👨‍🏫</div>
+                        <h4>Панель викладача</h4>
+                        <p>Управління курсами в реальному часі: створення завдань, завантаження матеріалів та перевірка робіт.</p>
+                        <img src="images/teacherHomePage.png" alt="Викладач" class="feature-img-preview">
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="icon">📝</div>
+                        <h4>Тестування</h4>
+                        <p>Автоматизована система перевірки знань з миттєвим результатом та аналітикою відповідей.</p>
+                        <img src="images/test.png" alt="Тести" class="feature-img-preview">
+                    </div>
+                    <div class="feature-item reveal">
+                        <div class="icon">⚡</div>
+                        <h4>Чат та Сповіщення</h4>
+                        <p>Живе спілкування між студентами та викладачами завдяки технології WebSockets.</p>
+                        <img src="images/chat.png" alt="Чат" class="feature-img-preview">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2 class="reveal">Галерея інтерфейсу</h2>
+                <div class="gallery-filters reveal">
+                    <button class="filter-btn active" data-filter="all">Всі фото</button>
+                    <button class="filter-btn" data-filter="dash">Дашборди</button>
+                    <button class="filter-btn" data-filter="edu">Навчальний процес</button>
+                    <button class="filter-btn" data-filter="modals">Модальні вікна</button>
+                    <button class="filter-btn" data-filter="auth">Доступ та Налаштування</button>
+                </div>
+
+                <div class="gallery-grid-v2 reveal">
+                    <!-- Dashboards -->
+                    <div class="gallery-card" data-category="dash">
+                        <img src="images/home.png" alt="Головна">
+                        <div class="card-info"><h4>Загальний дашборд системи</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="dash">
+                        <img src="images/studentHomePage.png" alt="Студент">
+                        <div class="card-info"><h4>Головна сторінка студента</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="dash">
+                        <img src="images/teacherHomePage.png" alt="Викладач">
+                        <div class="card-info"><h4>Головна сторінка викладача</h4></div>
+                    </div>
+
+                    <!-- Education Process -->
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/schedule.png" alt="Розклад">
+                        <div class="card-info"><h4>Загальний розклад занять</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/subjectpage.png" alt="Предмет">
+                        <div class="card-info"><h4>Загальний огляд предмету</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/StudentSubjectPage.png" alt="Предмет Студент">
+                        <div class="card-info"><h4>Сторінка предмету (студент)</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/teacherSubjectHomePage.png" alt="Предмет Викладач">
+                        <div class="card-info"><h4>Управління предметом (викладач)</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/subjectTaskPage.png" alt="Завдання">
+                        <div class="card-info"><h4>Управління завданнями предмету</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/studentTasksListpage.png" alt="Завдання Студент">
+                        <div class="card-info"><h4>Список завдань студента</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/studentTaskDetails.png" alt="Деталі завдання">
+                        <div class="card-info"><h4>Деталі виконання завдання</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/TeacherTaskDetails.png" alt="Деталі завдання Викл">
+                        <div class="card-info"><h4>Деталі завдання (викладач)</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/subjectMaterialpage.png" alt="Матеріали">
+                        <div class="card-info"><h4>Бібліотека навчальних матеріалів</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/subjectTestpage.png" alt="Тести">
+                        <div class="card-info"><h4>Модуль тестування курсу</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/test.png" alt="Проходження тесту">
+                        <div class="card-info"><h4>Процес проходження тестування</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/TeacherTestDetails.png" alt="Налаштування тесту">
+                        <div class="card-info"><h4>Налаштування тесту (викладач)</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="edu">
+                        <img src="images/subjectStudentListpage.png" alt="Учасники">
+                        <div class="card-info"><h4>Список учасників курсу</h4></div>
+                    </div>
+
+                    <!-- Modals -->
+                    <div class="gallery-card" data-category="modals">
+                        <img src="images/AddMaterialModal.png" alt="Додати матеріал">
+                        <div class="card-info"><h4>Додавання матеріалів</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="modals">
+                        <img src="images/CreateTaskModal.png" alt="Створити завдання">
+                        <div class="card-info"><h4>Конструктор нових завдань</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="modals">
+                        <img src="images/CreateTestModal.png" alt="Створити тест">
+                        <div class="card-info"><h4>Створення інтерактивних тестів</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="modals">
+                        <img src="images/createSubjectModal.png" alt="Створити предмет">
+                        <div class="card-info"><h4>Створення навчального курсу</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="modals">
+                        <img src="images/JoinSubjectModal.png" alt="Приєднатися">
+                        <div class="card-info"><h4>Приєднання до предмету</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="modals">
+                        <img src="images/scheduleModal.png" alt="Редагувати розклад">
+                        <div class="card-info"><h4>Редагування розкладу</h4></div>
+                    </div>
+
+                    <!-- Auth & Others -->
+                    <div class="gallery-card" data-category="auth">
+                        <img src="images/login.png" alt="Вхід">
+                        <div class="card-info"><h4>Форма входу в систему</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="auth">
+                        <img src="images/register.png" alt="Реєстрація">
+                        <div class="card-info"><h4>Реєстрація користувача</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="auth">
+                        <img src="images/auth.png" alt="Вибір ролі">
+                        <div class="card-info"><h4>Сторінка вибору ролі</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="auth">
+                        <img src="images/chat.png" alt="Чат">
+                        <div class="card-info"><h4>Система обміну повідомленнями</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="auth">
+                        <img src="images/notification.png" alt="Сповіщення">
+                        <div class="card-info"><h4>Система миттєвих сповіщень</h4></div>
+                    </div>
+                    <div class="gallery-card" data-category="auth">
+                        <img src="images/settings.png" alt="Налаштування">
+                        <div class="card-info"><h4>Налаштування профілю</h4></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="tech" class="section alt-bg">
+            <div class="container">
+                <h2 class="reveal">Технологічний стек</h2>
+                <div class="tech-stack-v2">
+                    <div class="tech-item reveal">
+                        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript"></div>
+                        <h4>TypeScript</h4>
+                        <p>Надійна типізація</p>
+                    </div>
+                    <div class="tech-item reveal">
+                        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="Next.js" class="invert"></div>
+                        <h4>Next.js</h4>
+                        <p>Frontend фреймворк</p>
+                    </div>
+                    <div class="tech-item reveal">
+                        <div class="tech-icon"><img src="https://bun.sh/logo.svg" alt="Bun"></div>
+                        <h4>Bun</h4>
+                        <p>Runtime & WebSockets</p>
+                    </div>
+                    <div class="tech-item reveal">
+                        <div class="tech-icon"><img src="https://hono.dev/images/logo.png" alt="Hono"></div>
+                        <h4>Hono</h4>
+                        <p>Backend фреймворк</p>
+                    </div>
+                    <div class="tech-item reveal">
+                        <div class="tech-icon"><img src="https://raw.githubusercontent.com/colinhacks/zod/master/logo.svg" alt="Zod"></div>
+                        <h4>Zod</h4>
+                        <p>Валідація схем</p>
+                    </div>
+                    <div class="tech-item reveal">
+                        <div class="tech-icon"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB"></div>
+                        <h4>MongoDB</h4>
+                        <p>База даних</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">EduFlow</div>
+                <p>&copy; 2026 Звіт про проходження виробничої практики.</p>
+                <p class="author">Розробив: <span>Студент-практикант Кузів Роман Романович</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
